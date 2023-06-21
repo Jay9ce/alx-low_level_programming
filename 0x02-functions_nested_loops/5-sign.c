@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int print_sign: checks the input integer
+ * print_sign: checks the input integer
  * @n: integer to be checked
  * Return: 0, 1 or -1
  */
@@ -17,7 +17,7 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	else 
+	else
 	{
 		_putchar('-');
 		return (-1);
