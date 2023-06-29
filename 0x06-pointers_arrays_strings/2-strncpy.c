@@ -1,16 +1,14 @@
 /**
- * _strncat - concat two strings
+ * _strncpy - copy n of a string
  * @dest: pointer to first string
  * @src: pointer to second string
  * @n: amount
  * Return: result
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	char *result = dest;
 
-	while (*dest != '\0')
-		dest++;
 	while (*src != '\0' && n > 0)
 	{
 		*dest = *src;
@@ -18,6 +16,11 @@ char *_strncat(char *dest, char *src, int n)
 		src++;
 		n--;
 	}
-	*dest = '\0';
+	while (n > 0)
+	{
+		*dest = '\0';
+		dest++;
+		n--;
+	}
 	return (result);
 }
