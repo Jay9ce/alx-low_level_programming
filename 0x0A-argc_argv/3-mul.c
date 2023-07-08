@@ -1,26 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - multiplies two numbers
+ * main - Entry point
  * @argc: Argument count
- * @argv: Argument value
+ * @argv: Argument vector
  *
- * Return: 0 or 1 if otherwise
+ * Return: Always 0
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
-	int i;
-	int result = 1;
+	int num1, num2, result;
 
-	if (argc = 3)
+	if (argc != 3)
 	{
-		for (i = 1;i < argc; i++)
-			result = result * mul;
-			mul = atoi(argv[i]);
-		printf("%d\n", mul);
-		return (0);
-	}
-	else
 		printf("Error\n");
 		return (1);
+	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
+	printf("%d\n", result);
+	return (0);
 }
