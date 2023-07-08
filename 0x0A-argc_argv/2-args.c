@@ -1,7 +1,7 @@
 #include <stdio.h>
 /* main - Entry point
- * @argc: argument count
- * @argv: argument value
+ * @argc: Argument count
+ * @argv: Argument value
  *
  * Return: Always 0
  */
